@@ -241,5 +241,114 @@ This project leverages **OpenCV** for developing various image and video process
 
 ---
 
+This project leverages **OpenCV**, **dlib**, and **face_recognition** libraries to perform real-time face recognition, attentiveness tracking, and attendance logging for online educational applications. The goal is to improve engagement tracking by capturing detailed data on student participation, attentiveness, and facial recognition events.
+
+---
+
+## **Face Recognition**
+
+### **Libraries or Frameworks Used:**
+- **OpenCV**: Version 4.10.0.84
+- **LabelImg**: Version 1.8.6
+- **dlib**: Version 19.24.6
+- **face_recognition**: Version 1.3.0
+- **imutils**: Version 0.5.4
+
+### **Developed Features**
+
+#### A) `Face_recognition`
+- **Functionality**: Performs real-time face recognition to identify whether the individual in live video frames matches a known face. Displays the person’s name if recognized; otherwise, shows "Not Recognized."
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/87f7bfdf-e0e0-41fb-b9a6-4ffdd58afc04)
+
+#### B) `Attendence_save`
+- **Functionality**: Utilizes a live video feed to identify and log attendance with date and time. After five recognitions, saves records to an Excel file and resets the counter.
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/d902b33c-7639-4a2a-ab97-3706af531af6)
+  ![Additional Output Image](https://github.com/user-attachments/assets/0953d67b-0e85-43ab-b7d5-2a2887aba4fa)
+
+#### C) `test`
+- **Functionality**: Recognizes faces in a live video feed, logging each identification event every 30 seconds to Excel to avoid duplicates. Displays "Recognized" or "Not Recognized."
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/323fea74-a68d-45bb-905e-64105c64ab98)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/412ad2ad-0468-4976-aed0-5f78486af917)
+  ![Additional Output Image](https://github.com/user-attachments/assets/b37c0bcc-0dd5-420b-bafe-e981e66a91b9)
+
+#### D) `tools`
+- **Functionality**: Captures real-time video to recognize faces, saving attendance logs after five detections. Exits and saves data when 'q' is pressed.
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/0e67fd69-db4d-49be-88e6-9a331d62ccc5)
+  ![Additional Output Image](https://github.com/user-attachments/assets/f6575fd2-b8fb-4915-8864-90d3de696025)
+
+#### E) `excel_sc`
+- **Functionality**: Logs attendance to Excel, capturing screenshots every 30 seconds with error handling and termination on pressing 'q'.
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/dfc4223a-39ca-49c4-8a37-e1316e40b8b9)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/5fc7f30e-ce33-4047-8e1a-c31e54c16b6b)
+  ![Additional Output Image](https://github.com/user-attachments/assets/8b5de8b6-4460-40be-b370-ebcb2dc9bfdf)
+
+#### F) `excel_sc_dt`
+- **Functionality**: Uses real-time face recognition to log attendance, capturing screenshots and avoiding multiple logs within a 5-minute interval.
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/e9b887a3-c584-41f1-a5a8-5d5c2c9bc3a9)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/b0867453-3e33-4962-b06c-6f9097943284)
+  ![Additional Output Image](https://github.com/user-attachments/assets/ca58f282-39ee-44cd-b6c4-4165d816fb3a)
+
+#### G) `landmark`
+- **Functionality**: Tracks attentiveness in real-time, logging events with timestamp and screenshot, and displays "Attentive" or "Not Attentive."
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/043e1cd9-a586-4f51-9e9c-76d2e69397bf)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/a153f6ac-cf89-4aa0-90d7-cebe64bc7758)
+  ![Additional Output Image](https://github.com/user-attachments/assets/ff1229d5-f576-46d1-b57b-713056cdb7f5)
+
+#### H) `atten_score`
+- **Functionality**: Computes attentiveness based on head pose and logs to Excel every 30 seconds if attentive.
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/731848e6-0bce-4971-84fe-e756729d76b6)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/cd5d5421-1e46-49fc-a07d-511cb2fad86e)
+  ![Additional Output Image](https://github.com/user-attachments/assets/65a0dafe-eebf-48ab-a8df-08d4b0e08c7e)
+
+#### I) `avg_atten_score`
+- **Functionality**: Calculates attentiveness scores and logs data to Excel every 30 seconds, displaying an average attentiveness score at the end of the session.
+
+- **Input:**
+  ![Sample Input Image](https://github.com/user-attachments/assets/3e8f0c19-08cf-497c-8463-89e6b6e4de95)
+
+- **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/c45ca786-e6de-4f19-867f-f643e5aee5ab)
+  ![Additional Output Image 1](https://github.com/user-attachments/assets/399a5178-f728-4e24-8dca-df6dc5536b0f)
+  ![Additional Output Image 2](https://github.com/user-attachments/assets/3eb18991-da16-42e7-add4-685c8d950ff2)
+
+---
+
+Each feature is designed to enhance face recognition, attendance tracking, and attentiveness monitoring, supporting engagement tracking in educational applications.
+
 
 
