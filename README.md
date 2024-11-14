@@ -159,4 +159,87 @@ This project utilizes **OpenCV** for developing various image processing functio
 
 ---
 
-Each feature has been designed to support engagement tracking for educational applications by enhancing or processing images effectively.
+#### **Image and Video Processing with OpenCV**
+
+This project leverages **OpenCV** for developing various image and video processing functions, with additional support for annotations to enhance engagement tracking for young learners. The project includes operations such as noise removal, morphological transformations, template matching, and more.
+
+- **Library/Framework**: OpenCV
+- **Version**: 4.10.0.84
+
+---
+
+## **Image Processing**
+
+### **Developed Features**
+
+#### M) `image_noise_removal & closing_gaps`
+- **Functionality**: Uses morphological operations to remove noise and fill gaps in the image, helping to clean up the image data for better clarity and analysis.
+
+#### N) `image_template`
+- **Functionality**: Performs template matching to locate a template image within a larger image, enabling the identification of specific regions of interest.
+
+---
+
+## **Video Processing**
+
+### **Libraries or Frameworks Used:**
+- **OpenCV**: Version 4.10.0.84
+
+### **Developed Features**
+
+#### A) `Video_multivideo`
+- **Functionality**: Reads and displays images from a specified folder, printing the dimensions of each image for inspection and verification.
+
+#### B) `Video_fps`
+- **Functionality**: Captures video from the webcam, displays it in real-time, and calculates the frames per second (FPS), allowing users to monitor the performance.
+
+#### C) `Video_save`
+- **Functionality**: Captures live video and saves it to a specified output file, enabling users to record and review footage.
+
+#### D) `Video_stack`
+- **Functionality**: Reads and resizes two video files, concatenating them horizontally, which allows for side-by-side video comparisons.
+
+#### E) `Video_stream`
+- **Functionality**: Captures live video from the webcam and displays it in real-time, providing a continuous live stream for immediate feedback.
+
+---
+
+## **Annotations**
+
+### **Libraries or Frameworks Used:**
+- **OpenCV**: Version 4.10.0.84
+- **LabelImg**: Version 1.8.6
+
+### **Developed Features**
+
+#### A) `data_segregate`
+- **Functionality**: Organizes images and their label files by moving them into `matched` and `unmatched` directories based on their label status, making data management easier.
+
+- **Input:**
+  ![Input Image](https://github.com/user-attachments/assets/02e52f2f-6748-4001-afc5-5dcd6b0878d1)
+
+- **Output:**
+  ![Output Image](https://github.com/user-attachments/assets/2d4752e2-503a-42d0-960d-a8c4052ea4af)
+
+#### B) `label`
+- **Functionality**: Draws bounding boxes on images based on annotations in the label files, helping to visualize detected objects and regions of interest.
+
+- **Input:**
+  ![Input Image](https://github.com/user-attachments/assets/00912d51-adb0-4966-99b3-050b5ebdf0b5)
+
+- **Output:**
+  ![Output Image](https://github.com/user-attachments/assets/9313c7f1-aa45-45e5-bd1f-625b73ca6a57)
+
+#### C) `label_manipulate`
+- **Functionality**: Updates class numbers in label files for object detection tasks, facilitating the reclassification or adjustment of labels as needed.
+
+- **Input:**
+  ![Input Image](https://github.com/user-attachments/assets/f37cebd8-1bec-4b76-be9e-d4ca59d9cc13)
+
+- **Output:**
+  ![Output Image](https://github.com/user-attachments/assets/ec43245d-01b4-4b4e-9e70-ef4088e713d4)
+
+---
+
+
+
