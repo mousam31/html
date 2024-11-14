@@ -64,7 +64,7 @@ This project utilizes **OpenCV** for developing various image processing functio
 ---
 
 ### E) **Edge Detection**
-- Applies **Canny Edge Detection** with threshold values of 100 and 200.
+- Applies **Edge Detection** with threshold values of 100 and 200.
 - Displays the edge-detected image in a separate window.
 
 **Input:**
